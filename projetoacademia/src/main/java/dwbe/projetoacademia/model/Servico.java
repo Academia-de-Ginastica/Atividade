@@ -1,6 +1,6 @@
-package model;
+package dwbe.projetoacademia.model;
 
-class Sevico {
+class Servico {
     private int codigo;
     private String tipo;
     private double valor;
@@ -8,7 +8,7 @@ class Sevico {
     private int quantidadeDeAlunos;
     private String plano;
 
-    public Sevico(int codigo, String tipo, double valor, int duracao, int quantidadeDeAlunos, String plano) {
+    public Servico(int codigo, String tipo, double valor, int duracao, int quantidadeDeAlunos, String plano) {
         this.codigo = codigo;
         this.tipo = tipo;
         this.valor = valor;
