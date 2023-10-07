@@ -45,11 +45,11 @@ public class Main {
                     cadastrarTurma();
                     break;
                 case 4:
-                    System.out.println("Saindo do programa.");
+                    System.out.println("Saindo do sistema da academia de ginástica.");
                     scanner.close();
                     System.exit(0);
                 default:
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opção inserida está inválida. Tente novamente, por favor.");
             }
         }
     }
