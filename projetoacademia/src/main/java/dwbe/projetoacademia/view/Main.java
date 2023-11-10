@@ -32,7 +32,7 @@ public class Main {
         Turma turma5 = new Turma(5, "Turma de Ginástica", "Ginástica", 60);
         Turma turma6 = new Turma(6, "Turma de Funcional", "Funcional", 40);
         Turma turma7 = new Turma(7, "Turma de Personalizado", "Personalizado", 60);
-        Turma turma8 = new Turma(8, "Turma de Alogamento", "Alongamento", 30);
+        Turma turma8 = new Turma(8, "Turma de Alongamento", "Alongamento", 30);
         Turma turma9 = new Turma(9, "Turma de Dança - Adultos", "Dança Adulto", 60);
         Turma turma10 = new Turma(10, "Turma de Dança - Idosos", "Dança Idoso", 30);
         Turma turma11 = new Turma(11, "Turma de Artes Marciais", "Artes Marciais", 90);
@@ -419,7 +419,8 @@ public class Main {
             // Atualize o status do aluno para "cancelado" (status 1)
             alunoParaCancelar.setStatus(1);
 
-            // Remova o aluno das turmas em que estiver inscrito
+            // Remova o aluno das turmas em que estiver inscrito9
+
             for (Turma turma : turmas) {
                 if (turma.getAlunos().contains(alunoParaCancelar)) {
                     turma.removerAluno(alunoParaCancelar);

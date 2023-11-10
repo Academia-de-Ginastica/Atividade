@@ -16,7 +16,7 @@ class ProjetoacademiaApplicationTests {
 
 
 		Aluno aluno1 = new Aluno(1, "João", "123456", "7845632",null, "5555", "Rua Marechal", "4444", "sim", 0 );
-		Mensalidade mensalidade1 = new Mensalidade(2, aluno1, null, 350.0, null, 350.0);
+		Mensalidade mensalidade1 = new Mensalidade(2, aluno1, null, 120.0, null, 120.0);
 		List<String> periodos = new ArrayList<>();
 		periodos.add("Manhâ");
 		periodos.add("Tarde");

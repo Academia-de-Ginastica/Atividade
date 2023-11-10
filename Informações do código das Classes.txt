@@ -1,7 +1,5 @@
 Sistema – Academia de Ginástica
 
-Informações do código das Classes
-
 Pasta Model
 – Aluno: A classe representa um aluno em uma academia. Possui os seguintes atributos: Aluno e Pessoa.
 
