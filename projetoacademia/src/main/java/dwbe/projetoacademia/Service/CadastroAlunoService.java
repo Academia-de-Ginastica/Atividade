@@ -36,7 +36,7 @@ public class CadastroAlunoService {
                 return aluno;
             }
         }
-        return null; // Retorna null se o aluno não for encontrado
+        return null; // Retorna "null" se o aluno não for encontrado
     }
 
     // Método para remover um aluno
