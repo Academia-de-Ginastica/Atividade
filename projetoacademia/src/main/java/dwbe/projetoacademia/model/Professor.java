@@ -20,7 +20,7 @@ public class Professor extends Pessoa {
         return modalidade;
     }
 
-    public void setModalidade(String modalidade) {
+    public void setModalidadeetModalidade(String modalidade) {
         this.modalidade = modalidade;
     }
 

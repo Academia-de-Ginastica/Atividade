@@ -47,10 +47,6 @@ public class Pessoa {
         return email;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -111,6 +107,6 @@ public class Pessoa {
     }
 
     public boolean getId() {
-        return 0;
+        return false;
     }
 }

@@ -21,7 +21,6 @@ public class UsuarioDAO {
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, usuario.getNome());
         statement.setString(2, usuario.getEmail());
-        statement.setString(3, usuario.getSenha());
         statement.execute();
     }
 
@@ -63,7 +62,6 @@ public class UsuarioDAO {
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, usuario.getNome());
         statement.setString(2, usuario.getEmail());
-        statement.setString(3, usuario.getSenha());
         statement.execute();
     }
 }

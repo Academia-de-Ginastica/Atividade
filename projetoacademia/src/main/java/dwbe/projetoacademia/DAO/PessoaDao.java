@@ -1,6 +1,6 @@
 package dwbe.projetoacademia.DAO;
 
-public class PessoaDao {
+public class PessoaDAO {
     public boolean metodo(){
         return true;
     }
