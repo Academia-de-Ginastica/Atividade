@@ -5,6 +5,8 @@ import dwbe.projetoacademia.model.Professor;
 import dwbe.projetoacademia.model.Turma;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
 //import model.*; - verificar o model
 
 import java.text.ParseException;
@@ -13,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+
+@SpringBootApplication
+@ComponentScan(basePackages = "dwbe.projetoacademia")
 
 public class Main {
     // Listas para armazenar alunos, professores e turmas cadastrados
@@ -56,7 +61,7 @@ public class Main {
         turmas.add(turma14);
 
         while (true) {
-            System.out.println("------------------------------------- SISTEMA DA ACADEMIA ----------------------------------");
+            System.out.println("------------------------------------------ SISTEMA DA ACADEMIA ------------------------------------------");
             System.out.println("1. Cadastrar Aluno(a) na academia (Alunos cadastrados na academia podem usar os aparelhos)" );
             System.out.println("2. Cadastrar Professor(a)");
             System.out.println("3. Cadastrar uma nova turma");
@@ -74,7 +79,9 @@ public class Main {
             System.out.println("15. Sair");
             System.out.println();
 
+            System.out.println("------------------------------------------ Digite a opção deseja no sistema, abaixo: ------------------------------------------");
             System.out.print("Selecione uma opção:");
+
             int escolha = scanner.nextInt();
 
             switch (escolha) {
