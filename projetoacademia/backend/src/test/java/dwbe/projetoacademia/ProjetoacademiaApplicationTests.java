@@ -26,5 +26,7 @@ class ProjetoacademiaApplicationTests {
 		System.out.println(mensalidade1.getValorMensalidade());
 		System.out.println(professor1.getNome());
 
+		@Autowired
+		private JdbcTemplate jdbcTemplate;
 	}
 }

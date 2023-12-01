@@ -1,26 +1,4 @@
-use academiadw
-
-CREATE TABLE Pessoas (
-[PessoasId] [INT] NOT NULL PRIMARY KEY,
-[Codigo] [CHAR] (11),
-[Nome] [VARCHAR] (200),
-[RG] [VARCHAR] (10),
-[CPF] [VARCHAR] (11),
-[DataDeNascimento] [VARCHAR] (10),
-[CEP] [VARCHAR] (11),
-[Endereço] [VARCHAR] (200),
-[Telefone] [VARCHAR] (15)
-)
-
-CREATE TABLE MENSALIDADE(
-[MensalidadeId] [INT] NOT NULL PRIMARY KEY,
-[Aluno] [VARCHAR] (200),
-[DataMatricula] [DATETIME],
-[ValorMensalidade] [DECIMAL] (10, 2),
-[DataDePagamento] [DATE],
-[ValorPagamento] [DECIMAL] (10,2),
-[PessoasId] INT CONSTRAINT FK_Pessoas_Mensalidade FOREIGN KEY (PessoasId) REFERENCES Pessoas(PessoasId)
-);
+use projetoacademia
 
 CREATE TABLE ALUNO(
 [AlunoId] [INT] NOT NULL PRIMARY KEY,
@@ -39,22 +17,33 @@ CONSTRAINT FK_Pessoas_PROFESSOR FOREIGN KEY (PessoasId) REFERENCES Pessoas(Pesso
 CONSTRAINT FK_Aluno_PROFESSOR FOREIGN KEY (AlunoId) REFERENCES ALUNO(AlunoId)
 );
 
-CREATE TABLE SERVICO(
-[ServicoId] [INT] NOT NULL PRIMARY KEY,
-[Tipo] [VARCHAR] (200),
-[Valor] [DECIMAL] (10,2),
-[CPF] [VARCHAR] (11),
-[Duração] [TIME],
-[Quantidade_Aluno] [INT],
-[Plano] [VARCHAR] (200),
-);
-
 CREATE TABLE TURMA(
 [TurmaId] [INT] NOT NULL PRIMARY KEY,
-[Descrição] [VARCHAR] (200),
+[Descriï¿½ï¿½o] [VARCHAR] (200),
 [ServicoAssociado] [VARCHAR] (200),
 [Duracao] [TIME],
 [Aluno] [VARCHAR] (200),
 [Professor] [VARCHAR] (200),
 [ServicoId] INT CONSTRAINT FK_SERVICO_TURMA FOREIGN KEY (ServicoId) REFERENCES SERVICO(ServicoId)
 );
+
+CREATE TABLE MENSALIDADE(
+[MensalidadeId] [INT] NOT NULL PRIMARY KEY,
+[Aluno] [VARCHAR] (200),
+[DataMatricula] [DATETIME],
+[ValorMensalidade] [DECIMAL] (10, 2),
+[DataDePagamento] [DATE],
+[ValorPagamento] [DECIMAL] (10,2),
+[PessoasId] INT CONSTRAINT FK_Pessoas_Mensalidade FOREIGN KEY (PessoasId) REFERENCES Pessoas(PessoasId)
+);
+
+CREATE TABLE SERVICO(
+[ServicoId] [INT] NOT NULL PRIMARY KEY,
+[Tipo] [VARCHAR] (200),
+[Valor] [DECIMAL] (10,2),
+[CPF] [VARCHAR] (11),
+[Duraï¿½ï¿½o] [TIME],
+[Quantidade_Aluno] [INT],
+[Plano] [VARCHAR] (200),
+);
+

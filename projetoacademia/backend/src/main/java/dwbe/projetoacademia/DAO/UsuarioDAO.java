@@ -64,4 +64,8 @@ public class UsuarioDAO {
         statement.setString(2, usuario.getEmail());
         statement.execute();
     }
+    public void inserir(Pessoa usuario) throws SQLException;
+    public void remover(int id) throws SQLException;
+    public Pessoa buscarPorId(int id) throws SQLException;
+    public void gravar(Pessoa usuario) throws SQLException;
 }

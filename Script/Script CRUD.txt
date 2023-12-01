@@ -1,6 +1,6 @@
-spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=academiadw
-spring.datasource.username=23PC01
-spring.datasource.username=gpimentel7
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=projetoacademia
+spring.datasource.username=Estudante
+spring.datasource.password=wallacesantos
 package dwbe.projectacademiadw.dao;
 
 import dwbe.projetoacademia.model.Usuario;
@@ -15,7 +15,7 @@ public class UsuarioDAO {
 
     2 usages
     @Value("${spring.datasource.url}")
-    private String jdbc:sqlserver://localhost:1433;databaseName=academiadw;
+    private String jdbc:sqlserver://localhost:1433;databaseName=projetoacademia;
     2 usages
     @Value ("${spring.datasource.username}")
     private String 23PC01;
@@ -26,7 +26,7 @@ public class UsuarioDAO {
 // Metodo para gravar Pessoas (Pessoas) {
 
 try (Connection connection = DriverManager.getConnection (URL, USUARIO, SENHA)) {
-String sql = "INSERT INTO Pessoas (PessoasId, Codigo, Nome, RG, CPF, DataDeNascimento, CEP, Endereço, Telefone)
+String sql = "INSERT INTO Aluno (AlunoIdId, Codigo, Nome, RG, CPF, DataDeNascimento, CEP, Endereço, Telefone)
 VALUES
     (1, '001', 'João da Silva', '1234567', '12345678900', '1990-01-15', '12345-678', 'Rua da Amostra, 123', '555-5555'),
     (2, '002', 'Maria da Silva', '7654321', '98765432100', '1985-03-20', '54321-987', 'Avenida da Exemplo, 456', '555-1234'),

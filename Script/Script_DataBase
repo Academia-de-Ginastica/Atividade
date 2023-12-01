@@ -1,15 +1,9 @@
-CREATE DATABASE academiasql;
+CREATE DATABASE projetoacademia;
 
-CREATE TABLE PESSOA
+CREATE TABLE ALUNO
 (
-CodigoId INT Primary Key,
-Nome VARCHAR (200),
-RG VARCHAR (10),
-CPF VARCHAR (11),
-DataDeNascimento VARCHAR (10),
-CEP VARCHAR (11),
-Endereço VARCHAR (200),
-Telefone (VARCHAR) (15)
+Alunon ID INT Primary Ky
+Atestado_Medico VARCHAR (MAX)
 );
 
 
@@ -21,12 +15,6 @@ DataMatricula DATETIME,
 ValorMensalidade DECIMAL (10, 2),
 DataDePagamento DATE,
 ValorPagamento DECIMAL (10,2),
-);
-
-CREATE TABLE ALUNO
-(
-Alunon ID INT Primary Ky
-Atestado_Medico VARCHAR (MAX)
 );
 
 CREATE TABLE Professor

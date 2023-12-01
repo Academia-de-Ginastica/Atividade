@@ -1,7 +1,7 @@
 package dwbe.projetoacademia.Component;
 
 import dwbe.projetoacademia.model.Aluno;
-
+import dwbe.projetoacademia.model
 import java.util.Date;
 
 import org.springframework.stereotype.Component; // Importe a anotação do componente
