@@ -1,9 +1,9 @@
 # Primeiros passos com o aplicativo Create React
 
-Este projeto Sistema da Academia Power foi inicializado com [Create React App] com a pasta chamada Frontend (https://github.com/facebook/create-react-app).
+Este projeto Sistema da Academia Power foi inicializado com [Create React App] com a pasta chamada Frontend (https://github.com/facebook/create-react-app) no software chamado Intellij.
 ## Scripts Disponíveis
 
-No diretório do projeto, você pode executar:
+No diretório do projeto, você pode abrir o terminal com o atalho alt+f12 e executar o código, abaixo:
 
 ### `npm início`
 
@@ -41,6 +41,6 @@ Você nunca precisa usar `eject`. O conjunto de recursos selecionados é adequad
 
 ## Saber mais
 
-Você pode saber mais na [documentação sobre criação do aplicativo React](https://facebook.github.io/create-react-app/docs/getting-started).
+Você pode saber mais no site do blog React [documentação sobre criação do aplicativo React](https://facebook.github.io/create-react-app/docs/getting-started).
 
 Para aprender o React, confira a [documentação do React](https://reactjs.org/).
