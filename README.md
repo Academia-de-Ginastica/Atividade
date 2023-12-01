@@ -1,4 +1,4 @@
-# Primeiros passos com o aplicativo Create React
+# Primeiros passos com o aplicativo React com o Sistema.
 
 Este projeto Sistema da Academia Power foi inicializado com [Create React App] com a pasta chamada Frontend (https://github.com/facebook/create-react-app) no software chamado Intellij.
 ## Scripts Disponíveis
