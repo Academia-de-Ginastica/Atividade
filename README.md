@@ -1,6 +1,6 @@
 # Primeiros passos com o aplicativo Create React
 
-Este projeto Sistema da Academia Power foi inicializado com [Create React App] com a pasta chamada Frontend (https://github.com/facebook/create-react-app).
+Este projeto Sistema da Academia Power foi inicializado com [Create React App] com a pasta chamada Frontend e Backend (https://github.com/Academia-de-Ginastica/Sistema-Academia-Power/tree/main/projetoacademia).
 ## Scripts Disponíveis
 
 No diretório do projeto, você pode executar:
